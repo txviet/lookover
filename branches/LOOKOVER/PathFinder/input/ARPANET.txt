@@ -1,0 +1,16 @@
+<MIT>,<UTAH>
+<MIT>,<BBN>
+<MIT>,<LINC>
+<UTAH>,<SRI>
+<UTAH>,<SDC>
+<BBN>,<RAND>
+<BBN>,<HARV>
+<LINC>,<CASE>
+<SDC>,<RAND>
+<SRI>,<UCSB>
+<SRI>,<STAN>
+<SRI>,<UCLA>
+<RAND>,<UCLA>
+<HARV>,<CARN>
+<CASE>,<CARN>
+<UCSB>,<UCLA>
