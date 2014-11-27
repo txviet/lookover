@@ -1,7 +1,9 @@
 package org.ctu.cusc.core.source;
 
 public class Member {
-
+	String fullName;
+	Organization org;
+	Address adr;
 	
 	public String exportRDFVCard()
 	{

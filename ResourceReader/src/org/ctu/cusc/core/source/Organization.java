@@ -1,8 +1,10 @@
 package org.ctu.cusc.core.source;
 
-public class Organization {
+public class Organization 
+{
 	public String shorhName;
-	public String fullName;
+	public String organisation_name;
+	public String organisation_unit;
 	public Address address;
 	public Member representator;
 }
