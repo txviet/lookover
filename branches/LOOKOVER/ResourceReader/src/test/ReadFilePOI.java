@@ -17,6 +17,9 @@ public class ReadFilePOI {
 	{
 		FileInputStream file;
 		try {
+			
+			//http://viralpatel.net/blogs/java-read-write-excel-file-apache-poi/
+			
 			file = new FileInputStream(new File("input/Test.xls"));
 			//Get the workbook instance for XLS file
 			HSSFWorkbook workbook;
@@ -36,10 +39,17 @@ public class ReadFilePOI {
 				while(cellIterator.hasNext())
 				{
 					Cell cell = cellIterator.next();
-					if(cell.getCellType() == 1)
-						System.out.println(cell.getStringCellValue());
-					else
-						System.out.println(cell.getNumericCellValue());
+					switch(cell.getCellType()) {
+		                case Cell.CELL_TYPE_BOOLEAN:
+		                    System.out.print(cell.getBooleanCellValue() + "\t\t");
+		                    break;
+		                case Cell.CELL_TYPE_NUMERIC:
+		                    System.out.print(cell.getNumericCellValue() + "\t\t");
+		                    break;
+		                case Cell.CELL_TYPE_STRING:
+		                    System.out.print(cell.getStringCellValue() + "\t\t");
+		                    break;
+		            }
 				}
 				
 			}
